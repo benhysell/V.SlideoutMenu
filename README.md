@@ -17,7 +17,7 @@ Applicaiton is made up of four `Views`:
 i.e. From `MenuOneView.xaml.cs`
 ```
 [Region(Region.BaseShowSlidingMenu)]
-public partial class TabOneView
+public partial class MenuOneView
 {
 ```
 Tells the `SlideoutPresenter` this `View` should show the slideout menu button and to replace the currently shown `View` in the `HomeView`.
