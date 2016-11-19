@@ -1,0 +1,49 @@
+<views:BaseView x:Class="V.SlideoutMenu.Wpf.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:views="clr-namespace:V.SlideoutMenu.Wpf.Views"
+              xmlns:mvx="clr-namespace:MvvmCross.BindingEx.Wpf;assembly=MvvmCross.BindingEx.Wpf"
+             mc:Ignorable="d" 
+             >
+    <views:BaseView.Resources>
+        <ControlTemplate  x:Key="ContentOnlyTemplate" TargetType="{x:Type Button}">
+            <ContentPresenter />
+        </ControlTemplate>
+    </views:BaseView.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.RowSpan="2">
+            <StackPanel Orientation="Vertical" Name="rect" Width="400" VerticalAlignment="Stretch" Background="DarkGray" Visibility="Collapsed">
+                <ListBox ItemsSource="{Binding MenuItems}"  HorizontalContentAlignment="Stretch" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+
+                            <Button Click="SelectMenuItem"  Content="{Binding Title}" FontSize="30" Height="100"></Button>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Label Content="{Binding Username}"></Label>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="SlideOutMenuButton" Width="64" Height="64" FontSize="32" Background="White" Click="SlideOutMenuButtonClick">&#x000025B6;&#x0000FE0E;</Button>
+                <Label Name="TitleLabel" FontSize="40">Title</Label>
+            </StackPanel>
+        </Grid>
+        <Grid Name="ContentGrid" Grid.Row="1" Grid.Column="1">
+            <Label>Content</Label>
+        </Grid>
+    </Grid>
+</views:BaseView>

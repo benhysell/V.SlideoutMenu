@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V.SlideoutMenu.Core", "V.SlideoutMenu.Core\V.SlideoutMenu.Core.csproj", "{BF6E204B-ABB3-4883-9F0D-15975880342C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V.SlideoutMenu.Wpf", "V.SlideoutMenu.Wpf\V.SlideoutMenu.Wpf.csproj", "{B92C04C1-0862-43C6-BFCB-9EC1ABFB9FBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3BDE6266-46DF-4C86-8213-B2687BFA6EA2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF6E204B-ABB3-4883-9F0D-15975880342C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6E204B-ABB3-4883-9F0D-15975880342C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6E204B-ABB3-4883-9F0D-15975880342C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6E204B-ABB3-4883-9F0D-15975880342C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92C04C1-0862-43C6-BFCB-9EC1ABFB9FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92C04C1-0862-43C6-BFCB-9EC1ABFB9FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92C04C1-0862-43C6-BFCB-9EC1ABFB9FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92C04C1-0862-43C6-BFCB-9EC1ABFB9FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
